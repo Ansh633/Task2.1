@@ -80,8 +80,8 @@ void loop() {
   Serial.println("°C");
 
   // Update ThingSpeak with humidity and temperature data
-  ThingSpeak.setField(3, humidity);
-  ThingSpeak.setField(4, temperature);
+  ThingSpeak.setField(6, humidity);
+  ThingSpeak.setField(5, temperature);
 
   // Send data to ThingSpeak channel and check for success
   int responseCode = ThingSpeak.writeFields(channelID, apiKey);
